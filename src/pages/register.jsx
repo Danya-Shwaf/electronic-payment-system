@@ -1,26 +1,18 @@
+import Header from "../components/Header";
 import { Link } from "react-router-dom";
 import {
 IoPersonSharp,
 HiOutlineCalendarDateRange,
 Phone,
 LockKeyhole,
-MoveLeft
 } from "./index";
 
 function Register() {
     return(
-        <div className="h-[100vh]">
+        <div className="h-[100vh] w-full sm:w-3/4 shadow-lg m-auto sm:shadow-lg">
             {/* Header */}
-            <div className="bg-[#ffcb32] h-[250px]">
-                <div className="pl-8 pt-10 text-white text-[20px] cursor-pointer">
-                    <Link to='/login'><MoveLeft /></Link>
-                </div>
-                <div className="py-[2rem] sm:px-[6rem] sm:py-[3rem] md:px-[8rem] lg:px-[17rem]">
-                    <h1 className="text-white text-2xl lg:text-3xl font-bold px-[2rem] mb-[12px]">Go ahead and set up your account</h1>
-                    <p className="text-[#94A3B8] text-sm lg:text-lg px-[2rem]">Sign up-up to enjoy the best experience</p>
-                </div>
-            </div>
-            <div className="bg-white rounded-t-4xl mt-[-1rem] py-[1rem] px-[1.5rem] md:px-[8rem] lg:px-[18rem]">
+            <Header />
+            <div className="bg-white rounded-t-4xl mt-[-1rem] md:px-[6rem] md:pt-[2rem] sm:p-[3rem] p-[1rem]">
                 { /* button login and register */}
                 <div className="flex justify-around text-xl bg-[#e2e8f0] rounded-full shadow-md">
                     <Link to='/login' className="w-full text-center">

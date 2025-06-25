@@ -1,0 +1,30 @@
+{
+  "Home": {
+    "Balance": "Your Balance",
+    "Send": "Send Again",
+    "See": " See all",
+    "Add New": "Add New",
+    "LastTran": "Last Transaction",
+    "Transfer": "Transfer",
+    "Top Up": "Top Up",
+    "Internet": "Internet"
+  },
+  "Transfer" :{
+    "Incoming": "Incoming",
+    "Transferr": "Outgoing"
+  },
+  "Header" : {
+    "Go": "Go ahead and set up your account",
+    "Sign": "Sign in-up to enjoy the best experience"
+  },
+  "Footer" : {
+    "Home" : "Home",
+    "Transfer": "Transfer",
+    "Wallet" : "Wallet",
+    "Profile" : "Profile"
+  },
+  "Notification" :{
+    "Notification" : "Notification",
+    "New" :"New activity"
+  }
+}

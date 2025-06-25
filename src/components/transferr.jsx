@@ -1,10 +1,20 @@
-import React from 'react'
 import { BiTransfer } from "react-icons/bi";
 import { TbArrowBarDown } from "react-icons/tb";
-export default function Transferr({active}) {
+import { useTranslation } from "react-i18next";
+import  { useEffect } from "react";
+export default function Transferr({ active }) {
+  const { t, i18n } = useTranslation();
+  useEffect(() => {
+    console.log("Language changed:", i18n.language);
+  }, [i18n.language]);
+  console.log(t, i18n.language);
   const links = [
-    { to: "/Transfer", icon: <BiTransfer />, label: "Transfer" },
-    { to: "/Incoming", icon: <TbArrowBarDown />, label: "Incoming" },
+    { to: "/Transfer", icon: <BiTransfer />, label: t("Transfer.Transferr") },
+    {
+      to: "/Incoming",
+      icon: <TbArrowBarDown />,
+      label: t("Transfer.Incoming"),
+    },
   ];
   return (
     <div className="bg-white md:w-3/4 w-[80%] h-[74px] shadow-lg flex justify-around mx-auto p-2 text-lg mt-[-34px] md:mt-[-3rem] rounded-lg">
@@ -24,4 +34,4 @@ export default function Transferr({active}) {
       ))}
     </div>
   );
-};
+}

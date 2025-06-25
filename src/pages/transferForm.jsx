@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BsFillFilePersonFill , Footer ,MoveLeft, RiFolderSettingsFill} from "./index";
 function TransferForm() {
   return (
-    <div className="h-[100vh] flex flex-col">
+    <div className="h-[100vh] flex flex-col sm:shadow-lg">
       {/* Header */}
       <div className="bg-[#ffcb32] text-white p-6 h-[141px] md:rounded-b-[3rem] rounded-b-[2.3rem] shadow-[0px_4px_20px_0px_#862CB340]">
         <Link to="/Transfer">

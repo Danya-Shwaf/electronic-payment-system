@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Wallet() {
   return (
-    <div className="container mx-auto h-[100vh] w-[100%] flex flex-col">
+    <div className="container mx-auto h-[100vh] w-[100%] flex flex-col sm:shadow-lg">
       {/* Header */}
       <div className="bg-[#ffcb32] p-4 md:h-[20%] h-[17%] md:rounded-b-[3rem] rounded-b-[2.3rem] shadow-lg">
         <div className="text-center text-white md:mt-4">

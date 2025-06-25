@@ -2,13 +2,15 @@ import { MdPerson } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { BiTransfer } from "react-icons/bi";
 import { FaHome, FaWallet } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 export default function Footer({ active }) {
+  const { t, i18n } = useTranslation();
+  console.log(t, i18n.language);
   const links = [
-    { to: "/Home", icon: <FaHome />, label: "Home" },
-    { to: "/Transfer", icon: <BiTransfer />, label: "Transfer" },
-    { to: "/Wallet", icon: <FaWallet />, label: "Wallet" },
-    { to: "/Profile", icon: <MdPerson />, label: "Profile" },
+    { to: "/Home", icon: <FaHome />, label: t("Footer.Home") },
+    { to: "/Transfer", icon: <BiTransfer />, label: t("Footer.Transfer") },
+    { to: "/Wallet", icon: <FaWallet />, label: t("Footer.Wallet") },
+    { to: "/Profile", icon: <MdPerson />, label: t("Footer.Profile") },
   ];
 
   return (
