@@ -1,7 +1,23 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+
+
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@theme {
+  --color-primary: #184a14;
+  --color-button : #30752a;
+  --color-text : #20bb13;
+  --color-icon : #54964f;
+}
+/* 
+  #184a14
+  #54964f
+  #46b03d
+
+  #65253E
+ */
+

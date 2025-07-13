@@ -7,12 +7,12 @@ function Notification() {
   return (
     <div className="h-[100vh] flex flex-col sm:shadow-lg">
       {/* Header */}
-      <div className="bg-[#ffcb32] p-4 h-[119px] md:rounded-b-[3rem] rounded-b-[2.3rem] shadow-[0px_4px_20px_0px_#862CB340]">
+      <div className="bg-primary p-4 h-[119px] md:rounded-b-[3rem] rounded-b-[2.3rem] shadow-[0px_4px_20px_0px_#862CB340]">
         <div className="text-center text-white flex items-center justify-center mt-[1.2rem] font-medium">
           <Link to="/Home">
             <MoveLeft className="md:ml-[2rem] font-bold cursor-pointer" />
           </Link>
-          <h1 className="text-[#ffffffde] text-3xl grow">
+          <h1 className="text-white text-3xl grow">
             {t("Notification.Notification")}
           </h1>
         </div>

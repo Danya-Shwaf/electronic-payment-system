@@ -23,7 +23,7 @@ export default function Transferr({ active }) {
           <div
             className={`text-3xl w-10 h-10 flex justify-center items-center text-white rounded-full p-[2px] ${
               active == link.to || active == "/Transfer&Incoming"
-                ? "bg-[#52005e]"
+                ? "bg-icon"
                 : "bg-[#999999]"
             }`}
           >

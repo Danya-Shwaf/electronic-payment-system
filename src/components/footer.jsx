@@ -23,14 +23,14 @@ export default function Footer({ active }) {
         >
           <div
             className={`text-3xl rounded-full p-[4px] text-white ${
-              active === link.to ? "bg-[#52005e] " : "bg-gray-400 "
+              active === link.to ? "bg-icon" : "bg-gray-400 "
             }`}
           >
           {link.icon}
           </div>
           <h2
             className={`font-medium ${
-              active === link.to ? "text-[#52005e]" : "text-gray-400"
+              active === link.to ? "text-icon" : "text-gray-400"
             }`}
           >
             {link.label}

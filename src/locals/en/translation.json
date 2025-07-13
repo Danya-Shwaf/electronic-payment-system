@@ -9,22 +9,60 @@
     "Top Up": "Top Up",
     "Internet": "Internet"
   },
-  "Transfer" :{
+  "Transfer": {
     "Incoming": "Incoming",
-    "Transferr": "Outgoing"
+    "Transferr": "Outgoing",
+    "Latest Transfer": "Latest Transfer"
   },
-  "Header" : {
+  "Header": {
     "Go": "Go ahead and set up your account",
     "Sign": "Sign in-up to enjoy the best experience"
   },
-  "Footer" : {
-    "Home" : "Home",
-    "Transfer": "Transfer",
-    "Wallet" : "Wallet",
-    "Profile" : "Profile"
+  "Footer": {
+    "Home": "Home",
+    "Transfer": "Outgoing",
+    "Wallet": "Wallet",
+    "Profile": "Profile"
   },
-  "Notification" :{
-    "Notification" : "Notification",
-    "New" :"New activity"
+  "Notification": {
+    "Notification": "Notification",
+    "New": "New activity"
+  },
+  "Wallet": {
+    "Balance": "Your Balance",
+    "Transfer": "Transfer",
+    "Top Up": "Top Up",
+    "Internet": "Internet"
+  },
+  "Transfer Process": {
+    "Balance": "Your Balance",
+    "Top Up": "Top Up",
+    "Phone": "Input Your Number",
+    "Amount": "Set Amount",
+    "Notes": "Notes",
+    "Optional": "(optional)",
+    "Your notes": "Write your notes here",
+    "Process": "Process To Transfer"
+  },
+  "Login": {
+    "Login": "Login",
+    "Phone": "Phone Number",
+    "Pass": "Password",
+    "Google": "Google",
+    "Forget": "Forget Password?",
+    "Remember": "Remember me",
+    "Or": "Or login with",
+    "Register": "Register"
+  },
+  "Register": {
+    "Register": "Register",
+    "Login": "Login",
+    "Name":  "Full Name",
+    "Phone": "Phone Number",
+    "Pass": "Password"
+  },
+  "EA": {
+    "English": "English",
+    "Arabic": "Arabic"
   }
 }

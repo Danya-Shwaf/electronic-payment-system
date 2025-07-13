@@ -18,13 +18,13 @@ function Home() {
   return (
     <div className="container mx-auto h-[100vh] w-[100%] flex flex-col sm:shadow-lg">
       {/* header */}
-      <div className="bg-[#ffcb32] p-4 h-[187px] rounded-b-[35px] shadow-lg">
+      <div className="bg-primary p-4 h-[187px] rounded-b-[35px] shadow-lg">
         <div className="text-4xl flex justify-end">
           <Link to="/Notification">
-            <VscBellDot className="border-2 rounded-full p-[2px] text-[#52005e] inline cursor-pointer" />
+            <VscBellDot className="border-2 rounded-full p-[2px] text-icon inline cursor-pointer" />
           </Link>
         </div>
-        <div className="text-center text-white md:mt-[-1rem] mb-[1rem]">
+        <div className="text-center text-white md:mt-[-1rem] mb-[2rem]">
           <h2 className="text-xl font-medium text-[#ffffffde]">
             {t("Home.Balance")}
           </h2>
@@ -37,14 +37,14 @@ function Home() {
       <div className="mt-4 md:mx-8 m-3 h-[151px]">
         <div className="flex justify-between text-lg">
           <h3 className="text-2xl font-medium">{t("Home.Send")}</h3>
-          <div className="flex justify-between text-[#52005e] cursor-pointer">
+          <div className="flex justify-between text-icon cursor-pointer">
             <p className="text-lg">{t("Home.See")}</p>
             <IoIosArrowRoundForward className="text-2xl mt-[2px]" />
           </div>
         </div>
         <div className="md:mt-8 mt-4 flex gap-[2rem] text-center mx-3">
-          <div className="text-[#52005e] text-lg">
-            <p className="border-[#52005e] border-2 border-dashed rounded-full w-[3rem] h-[3rem] flex justify-center items-center mb-4">
+          <div className="text-icon text-lg">
+            <p className="border-icon border-2 border-dashed rounded-full w-[3rem] h-[3rem] flex justify-center items-center mb-4">
               <AiOutlinePlus className="text-3xl" />
             </p>
             <h2>{t("Home.Add New")}</h2>
@@ -63,7 +63,7 @@ function Home() {
       <div className="m-3 mt-4 md:mx-8 grow">
         <div className="flex justify-between text-lg">
           <h3 className="text-2xl font-medium">{t("Home.LastTran")}</h3>
-          <div className="flex justify-between text-[#52005e] cursor-pointer">
+          <div className="flex justify-between text-icon cursor-pointer">
             <p className="text-lg">{t("Home.See")}</p>
             <IoIosArrowRoundForward className="text-2xl mt-[2px]" />
           </div>
@@ -71,7 +71,7 @@ function Home() {
         <div className="m-4 mt-4 overflow-y-scroll max-h-[260px] custom-scrollbar">
           <div className="flex justify-between md:mb-[1rem] mb-[2rem]">
             <div className="flex md:gap-[4rem] gap-[2rem]">
-              <BiTransfer className="text-4xl text-white bg-[#52005e] rounded-full p-[3px] text-center" />
+              <BiTransfer className="text-4xl text-white bg-icon rounded-full p-[3px] text-center" />
               <div>
                 <h1 className="font-medium text-xl">{t("Home.Transfer")}</h1>
                 <p className="text-gray-500">date</p>
@@ -81,7 +81,7 @@ function Home() {
           </div>
           <div className="flex justify-between md:mb-[1rem] mb-[2rem]">
             <div className="flex md:gap-[4rem] gap-[2rem]">
-              <RiFolderSettingsFill className="text-4xl text-white bg-[#52005e] rounded-full p-[3px] text-center" />
+              <RiFolderSettingsFill className="text-4xl text-white bg-icon rounded-full p-[3px] text-center" />
               <div>
                 <h1 className="font-medium text-xl">{t("Home.Top Up")}</h1>
                 <p className="text-gray-500">date</p>
@@ -91,7 +91,7 @@ function Home() {
           </div>
           <div className="flex justify-between">
             <div className="flex md:gap-[4rem] gap-[2rem]">
-              <FaWifi className="text-4xl text-white bg-[#52005e] rounded-full p-[3px] text-center" />
+              <FaWifi className="text-4xl text-white bg-icon rounded-full p-[3px] text-center" />
               <div>
                 <h1 className="font-medium text-xl">{t("Home.Internet")}</h1>
                 <p className="text-gray-500">date</p>

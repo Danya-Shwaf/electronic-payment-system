@@ -11,6 +11,7 @@ import { FcGoogle } from "react-icons/fc";
 import { IoPersonSharp } from "react-icons/io5";
 import { HiOutlineCalendarDateRange } from "react-icons/hi2";
 import { MoveLeft, Phone, LockKeyhole } from "lucide-react";
+import { FaRegImage } from "react-icons/fa6";
 
 
 /* Imports Components */
@@ -37,5 +38,6 @@ export {
   Phone,
   LockKeyhole,
   IoPersonSharp,
-  HiOutlineCalendarDateRange
+  HiOutlineCalendarDateRange,
+  FaRegImage,
 };

@@ -1,42 +1,46 @@
 import Header from "../components/Header";
 import { FcGoogle, Phone, LockKeyhole } from "./index";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 function Login() {
+    const { t, i18n } = useTranslation();
+    console.log(t, i18n.language);
     return (
         <div className="h-[100vh]  w-full sm:w-3/4 m-auto sm:shadow-lg">
             {/* Header */}
             <Header />
-            <div className="bg-white rounded-t-4xl mt-[-1rem] md:px-[6rem] md:pt-[2rem] sm:p-[3rem] p-[1rem] ">
+            <div className="bg-white rounded-t-4xl mt-[-1rem] md:px-[2rem] md:pt-[2rem] sm:p-[3rem] p-[1rem] ">
                 {/*  button login and register */}
                 <div className="flex justify-around text-xl bg-[#e2e8f0] rounded-full shadow-md">
                 <button className="border py-[10px] m-[6px] bg-white w-full rounded-full border-[#a3a3a3] cursor-pointer font-medium text-[15px]">
-                    Login
+                    {t("Login.Login")}
                 </button>
                 <Link to="/register" className="w-full text-center">
                     <button className="py-[10px] m-[6px] rounded-full opacity-100 hover:opacity-75  w-full border-[#7e7e7e] cursor-pointer font-medium text-[15px] text-[#666667]">
-                    Register
+                    {t("Login.Register")}
                     </button>
                 </Link>
                 </div>
                 {/* Email and password */}
                 <form action="" className="flex flex-col mt-[2rem] gap-[0.5rem]">
                 <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
-                    <Phone className="text-[#ffcb32] mx-4" />
+                    <Phone className="text-icon mx-4" />
                     <input
-                    type="phone"
+                    type="Phone"
                     name="number"
                     id=""
-                    placeholder="Phone Number"
+                    placeholder={t("Login.Phone")}
                     className="w-full  focus:outline-none"
                     />
                 </div>
                 <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
-                    <LockKeyhole className="text-[#ffcb32] mx-4" />
+                    <LockKeyhole className="text-icon mx-4" />
                     <input
                     type="password"
                     name="password"
                     id=""
-                    placeholder="Password"
+                    placeholder={t("Login.Pass")}
                     className="w-full focus:outline-none"
                     />
                 </div>
@@ -45,16 +49,16 @@ function Login() {
                     <input
                         type="checkbox"
                         value=""
-                        className="mr-1 border-[#ffcb32] border"
+                        className="mr-1 border-icon border"
                     />
-                    <label htmlFor="">Remember me</label>
+                    <label htmlFor="">{t("Login.Remember")}</label>
                     </div>
-                    <div className="text-[#ffcb32] font-medium">
-                    <a href="">Forget Password?</a>
+                    <div className="text-icon font-medium">
+                    <a href="">{t("Login.Forget")}</a>
                     </div>
                 </div>
-                <div className="w-full mt-3 cursor-pointer bg-[#ffcb32] text-lg font-medium text-white rounded-xl text-center p-4">
-                    <Link to="/Home">Login</Link>
+                <div className="bg-primary hover:bg-icon w-full mt-3 cursor-pointer bg-primary-500 text-lg font-medium text-white rounded-xl text-center p-4">
+                    <Link to="/Home">{t("Login.Login")}</Link>
                 </div>
                 </form>
                 {/* or login & google */}
@@ -63,14 +67,14 @@ function Login() {
                     <p className="tracking-[-2px] text-[#d4d7d9]">
                     -------------------
                     </p>
-                    <p>Or login with</p>
+                    <p>{t("Login.Or")}</p>
                     <p className="tracking-[-2px] text-[#d4d7d9]">
                     -------------------
                     </p>
                 </div>
                 <div className="w-full cursor-pointer flex justify-center text-lg text-center md:mt-[3.4rem] rounded-4xl p-4 border-[#e5eaee] border-2">
                     <FcGoogle className="text-3xl mr-1" />
-                    <button className="text-[#2d2d2d] font-medium">Google</button>
+                    <button className="text-[#2d2d2d] font-medium">{t("Login.Google")}</button>
                 </div>
                 </div>
             </div>
