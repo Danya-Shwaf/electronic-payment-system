@@ -78,5 +78,9 @@
     "Total Payment" : "Total Payment",
     "Share" : "Share",
     "Back" : "Back to Home"
+  },
+  "SMSMsg" : {
+    "Msg1" : "Check your SMS",
+    "Msg2" : "We have sent password recovery instructions to your phone."
   }
 }

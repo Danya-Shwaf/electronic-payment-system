@@ -35,7 +35,7 @@ function Login() {
                 </div>
                 {/* Email and password */}
                 <form action="" className="flex flex-col mt-[2rem] gap-[0.5rem]">
-                <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                     <Phone className="text-icon mx-4" />
                     <input
                     type="Phone"
@@ -46,7 +46,7 @@ function Login() {
                     required
                     />
                 </div>
-                <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                     <LockKeyhole className="text-icon mx-4" />
                     <input
                     type="password"
@@ -70,7 +70,7 @@ function Login() {
                     <p>{t("Login.Forget")}</p>
                     </button>
                 </div>
-                <div className="bg-primary hover:bg-icon w-full mt-3 cursor-pointer bg-primary-500 text-lg font-medium text-white rounded-xl text-center p-4">
+                <div className="bg-primary hover:bg-icon w-full mt-2 cursor-pointer bg-primary-500 text-lg font-medium text-white rounded-xl text-center p-4">
                     <Link to="/Home">{t("Login.Login")}</Link>
                 </div>
                 </form>
@@ -85,7 +85,7 @@ function Login() {
                     -------------------
                     </p>
                 </div>
-                <div className="w-full cursor-pointer flex justify-center text-lg text-center md:mt-[3.4rem] rounded-4xl p-4 border-[#e5eaee] border-2">
+                <div className="w-full cursor-pointer flex justify-center text-lg text-center rounded-4xl p-4 border-[#e5eaee] border-2">
                     <FcGoogle className="text-3xl mr-1" />
                     <button className="text-[#2d2d2d] font-medium">{t("Login.Google")}</button>
                 </div>

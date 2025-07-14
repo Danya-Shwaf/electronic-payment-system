@@ -1,6 +1,9 @@
 import { MessageSquare } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function SMSMessage({ onClose }) {
+  const { t, i18n } = useTranslation();
+  console.log(t, i18n.language);
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
@@ -27,10 +30,10 @@ export default function SMSMessage({ onClose }) {
         {/* Content */}
         <div className="text-center">
           <h2 className="text-lg font-normal text-black mb-2 leading-6">
-            Check your SMS
+            {t("SMSMsg.Msg1")}
           </h2>
           <p className="text-[#7D848D] text-sm mb-6 leading-5">
-            We have sent password recovery instructions to your phone.
+            {t("SMSMsg.Msg2")}
           </p>
         </div>
       </div>

@@ -13,14 +13,15 @@ export default function ButtonLang() {
         src="../../public/English.png"
         alt="USA_Flag"
         className="w-6 h-[17.45px]"
+        loading="lazy"
       />
       <select
         id="language"
         value={language}
         onChange={(e) => {
-          const lang = e.target.value; 
-          setLanguage(lang); 
-          i18n.changeLanguage(lang); 
+          const lang = e.target.value;
+          setLanguage(lang);
+          i18n.changeLanguage(lang);
           localStorage.setItem("appLanguage", lang);
         }}
         className="outline-none bg-transparent cursor-pointer"

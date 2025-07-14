@@ -29,31 +29,31 @@ function Register() {
                     </button>
                 </div>
                 {/* Inputs */}
-                <form action="" className="flex flex-col gap-[12px] mt-[2rem]">
-                    <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                <form action="" className="flex flex-col gap-[10px] mt-[1rem]">
+                    <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                         <IoPersonSharp className="text-icon mx-4 text-2xl"/>
                         <input type="text" name="fullName" placeholder={t("Register.Name")} className="w-full focus:outline-none"/>
                     </div>
-                    <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                    <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                         <Phone className="text-icon mx-4"/>
                         <input type="phone" name="number" placeholder={t("Register.Phone")} className="w-full focus:outline-none"/>
                     </div>
-                    <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                    <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                         <LockKeyhole className="text-icon mx-4"/>
                         <input type="password" name="password" id="" placeholder={t("Register.Pass")}
                         className="w-full focus:outline-none"/>
                     </div>
-                    <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                    <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                         <HiOutlineCalendarDateRange className="text-icon mx-4 text-2xl"/>
                         <input type="date" placeholder="Your age" className="w-full focus:outline-none"/>
                     </div>
-                    <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
+                    <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
                     <FaRegImage className="text-icon mx-4 text-2xl"/>
                         <input type="file" placeholder="Your Image" className="w-full focus:outline-none cursor-pointer"/>
                     </div>
                 </form>
                 {/* button Register */}
-                <div className="flex grow justify-center w-full mt-5 md:mt-6  bg-primary hover:bg-icon text-lg font-medium text-white rounded-xl text-center p-4">
+                <div className="flex justify-center w-full mt-4  bg-primary hover:bg-icon text-[16px] font-medium text-white rounded-xl text-center p-4">
                         <button className="cursor-pointer">{t("Register.Register")}</button>
                 </div>
             </div>

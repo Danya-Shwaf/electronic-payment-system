@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { BsFillFilePersonFill , Footer ,MoveLeft, RiFolderSettingsFill} from "./index";
-import SuccessfulTransfer from "./successfulTransfer";
+import SuccessfulTransfer from "../components/successfulTransfer";
 
 function TransferForm() {
   const { t, i18n } = useTranslation();
