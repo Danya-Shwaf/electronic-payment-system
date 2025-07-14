@@ -2,10 +2,21 @@ import Header from "../components/Header";
 import { FcGoogle, Phone, LockKeyhole } from "./index";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import SMSMessage from '../components/SMSMessage';
+
 
 function Login() {
     const { t, i18n } = useTranslation();
     console.log(t, i18n.language);
+    const [showSMS, setShowSMS] = useState(false); 
+    const handleProcessClick = (e) => {
+        e.preventDefault();
+        setShowSMS(true);
+    };
+    const handleCloseSMS = () => {
+        setShowSMS(false);
+    };
     return (
         <div className="h-[100vh]  w-full sm:w-3/4 m-auto sm:shadow-lg">
             {/* Header */}
@@ -32,6 +43,7 @@ function Login() {
                     id=""
                     placeholder={t("Login.Phone")}
                     className="w-full  focus:outline-none"
+                    required
                     />
                 </div>
                 <div className="w-full flex p-4 rounded-xl bg-white border border-[#a3a3a3]">
@@ -42,6 +54,7 @@ function Login() {
                     id=""
                     placeholder={t("Login.Pass")}
                     className="w-full focus:outline-none"
+                    required
                     />
                 </div>
                 <div className="flex justify-between w-full">
@@ -53,9 +66,9 @@ function Login() {
                     />
                     <label htmlFor="">{t("Login.Remember")}</label>
                     </div>
-                    <div className="text-icon font-medium">
-                    <a href="">{t("Login.Forget")}</a>
-                    </div>
+                    <button type="button" onClick={handleProcessClick}  className="text-icon font-medium cursor-pointer">
+                    <p>{t("Login.Forget")}</p>
+                    </button>
                 </div>
                 <div className="bg-primary hover:bg-icon w-full mt-3 cursor-pointer bg-primary-500 text-lg font-medium text-white rounded-xl text-center p-4">
                     <Link to="/Home">{t("Login.Login")}</Link>
@@ -78,6 +91,7 @@ function Login() {
                 </div>
                 </div>
             </div>
+            {showSMS && <SMSMessage onClose={handleCloseSMS}/>}
         </div>
     );
 }

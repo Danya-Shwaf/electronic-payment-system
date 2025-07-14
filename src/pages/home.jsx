@@ -37,18 +37,21 @@ function Home() {
       <div className="mt-4 md:mx-8 m-3 h-[151px]">
         <div className="flex justify-between text-lg">
           <h3 className="text-2xl font-medium">{t("Home.Send")}</h3>
-          <div className="flex justify-between text-icon cursor-pointer">
+          <Link
+            to="/Transfer"
+            className="flex justify-between text-icon cursor-pointer"
+          >
             <p className="text-lg">{t("Home.See")}</p>
             <IoIosArrowRoundForward className="text-2xl mt-[2px]" />
-          </div>
+          </Link>
         </div>
         <div className="md:mt-8 mt-4 flex gap-[2rem] text-center mx-3">
-          <div className="text-icon text-lg">
+          <Link to="/TransferForm" className="text-icon text-lg cursor-pointer">
             <p className="border-icon border-2 border-dashed rounded-full w-[3rem] h-[3rem] flex justify-center items-center mb-4">
               <AiOutlinePlus className="text-3xl" />
             </p>
             <h2>{t("Home.Add New")}</h2>
-          </div>
+          </Link>
           <div className="text-lg">
             <img
               src=""
@@ -63,10 +66,13 @@ function Home() {
       <div className="m-3 mt-4 md:mx-8 grow">
         <div className="flex justify-between text-lg">
           <h3 className="text-2xl font-medium">{t("Home.LastTran")}</h3>
-          <div className="flex justify-between text-icon cursor-pointer">
+          <Link
+            to="/Transfer"
+            className="flex justify-between text-icon cursor-pointer"
+          >
             <p className="text-lg">{t("Home.See")}</p>
             <IoIosArrowRoundForward className="text-2xl mt-[2px]" />
-          </div>
+          </Link>
         </div>
         <div className="m-4 mt-4 overflow-y-scroll max-h-[260px] custom-scrollbar">
           <div className="flex justify-between md:mb-[1rem] mb-[2rem]">

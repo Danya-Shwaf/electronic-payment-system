@@ -11,7 +11,7 @@
   },
   "Transfer": {
     "Incoming": "Incoming",
-    "Transferr": "Outgoing",
+    "Outgoing": "Outgoing",
     "Latest Transfer": "Latest Transfer"
   },
   "Header": {
@@ -64,5 +64,19 @@
   "EA": {
     "English": "English",
     "Arabic": "Arabic"
+  },
+  "SuccessTrans" : {
+    "Successful" : "Transfer Successful",
+    "Your Tran" : "Your transaction was successful!",
+    "Send" : "Send to",
+    "Detail" : "Transaction Details",
+    "Payment" : "Payment",
+    "Date" : "Date",
+    "Time" : "Time",
+    "Ref Num" :  "Reference Number",
+    "Fee" : "Fee",
+    "Total Payment" : "Total Payment",
+    "Share" : "Share",
+    "Back" : "Back to Home"
   }
 }

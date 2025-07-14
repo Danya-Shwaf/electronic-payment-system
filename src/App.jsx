@@ -7,17 +7,20 @@ import "./i18n";
 
 
 function App() {
+  
   const { i18n } = useTranslation();
   useEffect(() => {
     const savedLang =
       localStorage.getItem("appLanguage") || navigator.language || "en";
     i18n.changeLanguage(savedLang);
   }, [i18n]);
+
   return (
     <div
       dir={i18n.language === "ar" ? "rtl" : "ltr"}
       className="w-full md:w-2/3 mx-auto box-border"
     >
+      
       <AppRouter />
     </div>
   );

@@ -9,7 +9,7 @@ import Transfer from "../pages/transfer";
 import TransferForm from '../pages/transferForm';
 
 const router = createBrowserRouter([
-  { path: "/", element: <Main /> },  
+  { path: "/", element: <Main /> },
   { path: "/Login", element: <Login /> },
   { path: "/Register", element: <Register /> },
   { path: "/Home", element: <Home /> },

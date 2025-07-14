@@ -12,7 +12,7 @@ function Transfer() {
         <div className="text-center text-white flex items-center justify-center mt-[1.2rem] font-medium"></div>
       </div>
       {/* Transfer And Incoming */}
-      <Transferr active="/Transfer" />
+      <Transferr active="/Outgoing" />
       {/* Latest Transfer */}
       <div className="mt-[2rem] mx-4 md:mx-10 grow">
         <h1 className="font-bold text-xl mb-[2rem]">

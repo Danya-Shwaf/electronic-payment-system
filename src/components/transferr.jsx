@@ -9,19 +9,23 @@ export default function Transferr({ active }) {
   }, [i18n.language]);
   console.log(t, i18n.language);
   const links = [
-    { to: "/Transfer", icon: <BiTransfer />, label: t("Transfer.Transferr") },
     {
       to: "/Incoming",
-      icon: <TbArrowBarDown />,
+      icon: <BiTransfer />,
       label: t("Transfer.Incoming"),
+    },
+    {
+      to: "/Outgoing",
+      icon: <TbArrowBarDown />,
+      label: t("Transfer.Outgoing"),
     },
   ];
   return (
     <div className="bg-white md:w-3/4 w-[80%] h-[74px] shadow-lg flex justify-around mx-auto p-2 text-lg mt-[-34px] md:mt-[-3rem] rounded-lg">
       {links.map((link) => (
-        <div key={link.to}>
+        <div key={link.to} className="flex flex-col justify-center items-center">
           <div
-            className={`text-3xl w-10 h-10 flex justify-center items-center text-white rounded-full p-[2px] ${
+            className={`text-3xl w-9 h-9 flex justify-center items-center text-white rounded-full p-[2px] ${
               active == link.to || active == "/Transfer&Incoming"
                 ? "bg-icon"
                 : "bg-[#999999]"

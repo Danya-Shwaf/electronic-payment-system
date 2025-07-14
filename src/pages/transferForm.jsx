@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import { BsFillFilePersonFill , Footer ,MoveLeft, RiFolderSettingsFill} from "./index";
+import SuccessfulTransfer from "./successfulTransfer";
+
 function TransferForm() {
   const { t, i18n } = useTranslation();
   console.log(t, i18n.language);
+  const [showSuccessModal, setShowSuccessModal] = useState(false); 
+
+  const handleProcessClick = () => {
+    setShowSuccessModal(true);
+  };
   return (
     <div className="h-[100vh] flex flex-col sm:shadow-lg">
       {/* Header */}
@@ -16,8 +24,8 @@ function TransferForm() {
             <p className="font-medium">{t("Transfer Process.Balance")}</p>
             <h1 className="font-bold text-2xl">Rp 24.321.900</h1>
           </div>
-          <div className="flex items-center md:gap-2 gap-1 font-bold  md:w-30  h-9 py-2 px-3 text-icon bg-white rounded-4xl">
-            <RiFolderSettingsFill className="w-6 h-6 " />
+          <div className="flex items-center md:gap-2 gap-1 font-bold  h-9 py-2 px-3 text-icon bg-white rounded-4xl">
+            <RiFolderSettingsFill className="w-6 h-6" />
             <p>{t("Transfer Process.Top Up")}</p>
           </div>
         </div>
@@ -37,10 +45,10 @@ function TransferForm() {
             </div>
           </div>
           <div className="my-10 text-center">
-            <h1 className="text-xl font-medium my-2">
+            <h1 className="text-xl font-medium m-2">
               {t("Transfer Process.Amount")}
             </h1>
-            <p className="font-[600] text-[2rem]">$200.000</p>
+            <input type="number"  className="font-[600] text-[1rem] outline-none border-b  p-2 border-b-gray-300"/>
           </div>
           <div className="my-5">
             <h1 className="font-medium text-lg mb-2">
@@ -58,13 +66,16 @@ function TransferForm() {
           </div>
         </form>
         <div className="text-center rounded-[20px] bg-primary hover:bg-icon py-4 px-2 text-white mt-10 cursor-pointer">
-          <button className="font-bold text-xl">
+          <button className="font-bold text-xl cursor-pointer" onClick={handleProcessClick}>
             {t("Transfer Process.Process")}
           </button>
         </div>
       </div>
       {/* Footer */}
       <Footer active="/Transfer" />
+      {showSuccessModal && (
+        <SuccessfulTransfer onClose={() => setShowSuccessModal(false)} />
+      )}
     </div>
   );
 }
