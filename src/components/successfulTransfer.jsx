@@ -19,7 +19,6 @@ export default function SuccessfulTransfer({ onClose }) {
             {t("SuccessTrans.Successful")}
           </h2>
           <p className="text-[#999999] mb-6">{t("SuccessTrans.Your Tran")}</p>
-
           {/* Amount */}
           <div className="text-4xl font-bold text-gray-800 mb-6">
             Rp 200.000
@@ -31,7 +30,7 @@ export default function SuccessfulTransfer({ onClose }) {
               {t("SuccessTrans.Send")}
             </p>
             <div className="flex items-center">
-              <div className="w-14 h-14 ml-4 bg-black rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
+              <div className="w-14 h-14 mx-4 bg-black rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3">
                 AM
               </div>
               <div>

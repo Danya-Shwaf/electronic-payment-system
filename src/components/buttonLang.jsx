@@ -4,7 +4,8 @@ import { useTranslation } from "react-i18next";
 
 
 export default function ButtonLang() {
-  const [language,setLanguage] = useState("en");
+  const currentLanguage = localStorage.getItem("appLanguage"); 
+  const [language,setLanguage] = useState(currentLanguage || "en");
   const { t, i18n } = useTranslation();
   console.log(t, i18n.language);
   return (

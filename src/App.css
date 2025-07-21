@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Product Sans Medium';
+  src: url('/fonts/Product Sans Medium.woff2') format('woff2'),
+      url('/fonts/Product Sans Medium.woff') format('woff'),
+      url('/fonts/Product Sans Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
 
 
+body {
+  font-family: 'Product Sans Medium', 'Inter', sans-serif;
+}
 
 .custom-scrollbar::-webkit-scrollbar {
   display: none;

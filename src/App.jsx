@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import WebFont from "webfontloader";
 import AppRouter from './Routes/AppRouter';
 import { useTranslation } from "react-i18next";
 import { useEffect  } from 'react';
@@ -9,6 +10,13 @@ import "./i18n";
 function App() {
   
   const { i18n } = useTranslation();
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ["Inter:300,400,500,700"],
+      },
+    });
+  }, []);
   useEffect(() => {
     const savedLang =
       localStorage.getItem("appLanguage") || navigator.language || "en";
