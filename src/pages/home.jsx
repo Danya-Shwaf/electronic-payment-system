@@ -46,11 +46,13 @@ function Home() {
           </Link>
         </div>
         <div className="md:mt-8 mt-4 flex gap-[2rem] text-center mx-3">
-          <Link to="/TransferForm" className="text-icon text-lg cursor-pointer">
+          <Link to="/AddNew" className="text-icon text-lg cursor-pointer">
             <p className="border-icon border-2 border-dashed rounded-full w-[3rem] h-[3rem] flex justify-center items-center mb-4">
               <AiOutlinePlus className="text-3xl" />
             </p>
-            <h2>{t("Home.Add New")}</h2>
+            <Link to="/AddNew">
+              <h2>{t("Home.Add New")}</h2>
+            </Link>
           </Link>
           <div className="text-lg">
             <img

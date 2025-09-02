@@ -18,22 +18,17 @@ body {
   display: none;
 }
 
+
+
+
 @theme {
-  --color-primary: #184a14;
-  --color-button : #30752a;
-  --color-hover : #184a14;
-  --color-text : #359a2d;
-  --color-icon : #54964f;
-}
-
-
-/* @theme {
   --color-primary: #65253E;
   --color-button : #65253E;
-  --color-hover : #65253E;
-  --color-text : #65253E;
-  --color-icon : #65253E;
-} */
+  --color-hover : #924362;
+  --color-text : #924362;
+  --color-icon : #924362;
+  
+}
 
 
 

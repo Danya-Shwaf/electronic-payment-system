@@ -86,7 +86,7 @@ function Login() {
                     </p>
                 </div>
                 <div className="w-full cursor-pointer flex justify-center text-lg text-center rounded-4xl p-4 border-[#e5eaee] border-2">
-                    <FcGoogle className="text-3xl mr-1" />
+                    <FcGoogle className="text-3xl mx-1" />
                     <button className="text-[#2d2d2d] font-medium">{t("Login.Google")}</button>
                 </div>
                 </div>

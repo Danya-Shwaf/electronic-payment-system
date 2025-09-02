@@ -7,6 +7,9 @@ import Wallet from '../pages/wallet'
 import Notification from '../pages/notification';
 import Transfer from "../pages/transfer";
 import TransferForm from '../pages/transferForm';
+import Incoming from "../pages/Incoming";
+import Profile from "../pages/profile";
+import AddNew from "../pages/addnew";
 
 const router = createBrowserRouter([
   { path: "/", element: <Main /> },
@@ -17,6 +20,10 @@ const router = createBrowserRouter([
   { path: "/Wallet", element: <Wallet /> },
   { path: "/Transfer", element: <Transfer /> },
   { path: "/TransferForm", element: <TransferForm /> },
+  { path: "/Outgoing", element: <Transfer /> },
+  { path: "/Incoming", element: <Incoming /> },
+  { path: "/Profile", element: <Profile /> },
+  { path: "/AddNew", element: <AddNew /> },
 ]);
 
   
