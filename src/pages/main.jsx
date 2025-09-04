@@ -1,10 +1,11 @@
 import { Link , Outlet } from "react-router-dom";
 import { MoveRight } from "lucide-react";
+import '../App.css'
 
 function Main() {
 
     return (
-    <div className="bg-primary h-[100vh]">
+    <div className="mycash-gradient h-[100vh]">
         <div>
             <img src="../../public/Logo.svg" alt="Logo" className="w-[400px] h-[400px] mx-auto" loading="lazy"/>
         </div>

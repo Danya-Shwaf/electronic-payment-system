@@ -30,6 +30,15 @@ body {
   
 }
 
+.mycash-gradient {
+    background: linear-gradient(135deg, 
+        #f8e8f0 0%,     
+        #e6c2d1 25%,    
+        #d4a0b8 50%,    
+        #c27e9f 75%,    
+        #b05c86 100%     
+    );
+}
 
 
 

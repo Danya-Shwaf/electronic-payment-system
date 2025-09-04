@@ -82,5 +82,19 @@
   "SMSMsg" : {
     "Msg1" : "Check your SMS",
     "Msg2" : "We have sent password recovery instructions to your phone."
+  },
+  "Profile":{
+    "experience" : "Your experience starts here.",
+    "enjoy" : "enjoy the best experience",
+    "Logout" : "Logout",
+    "account number" : "account number",
+    "email" : "your email",
+    "phone" : "phone number",
+    "password" : "password",
+    "full name" : "full name"
+  },
+  "Add" : {
+    "New" : "Add New Beneficiary",
+    "Save" : "Save Beneficiary"
   }
 }

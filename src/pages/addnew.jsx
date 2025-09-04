@@ -7,9 +7,7 @@ import {
 } from "./index";
 import {
   IoPersonSharp,
-  HiOutlineCalendarDateRange,
   Phone,
-  LockKeyhole,
 } from "./index";
 export default function AddNew() {
   const { t, i18n } = useTranslation();
@@ -22,10 +20,12 @@ export default function AddNew() {
           <Link to="/Home">
             <MoveLeft className="md:ml-[2rem] font-bold cursor-pointer" />
           </Link>
-          <h1 className="text-white text-xl grow">Add New Beneficiary</h1>
+          <h1 className="text-white text-xl grow">
+            {t("Add.New")}
+          </h1>
         </div>
       </div>
-      <div className="bg-white md:px-[2rem] md:pt-[2rem] sm:p-[3rem] p-[1rem] ">
+      <div className="bg-white md:px-[2rem] md:pt-[2rem] sm:p-[3rem] p-[1rem] flex-1">
         <div className=" m-auto">
           <div className="w-19 h-19 border border-primary m-auto rounded-full flex items-center justify-center">
             <IoPersonSharp className="text-icon mx-4 text-4xl" />
@@ -33,12 +33,12 @@ export default function AddNew() {
         </div>
         <form action="" className="flex flex-col mt-[2rem] gap-[0.5rem] flex-1">
           <div className="w-full flex p-3 rounded-xl bg-white border border-[#a3a3a3]">
-            <Phone className="text-icon mx-4" />
+            <IoPersonSharp className="text-icon mx-4 text-2xl" />
             <input
               type="text"
               name="FullName"
               id="name"
-              placeholder={t("Login.Name")}
+              placeholder={t("Register.Name")}
               className="w-full  focus:outline-none"
               required
             />
@@ -69,7 +69,7 @@ export default function AddNew() {
             ></textarea>
           </div>
           <div className="bg-primary hover:bg-icon w-full mt-2 cursor-pointer bg-primary-500 text-lg font-medium text-white rounded-xl text-center p-4">
-            <Link to="/Home">Save Beneficiary</Link>
+            <Link to="/Home">{t("Add.Save")}</Link>
           </div>
         </form>
       </div>
