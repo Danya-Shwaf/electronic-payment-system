@@ -1,44 +1,74 @@
-# React + Vite
+## Electronic Payment System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced **electronic payment system** that allows users to manage their wallets, transfer money securely, and view transaction history with a smooth and user-friendly experience.  
+The system supports **multi-language (Arabic & English)** and is built with React (Frontend) and Django (Backend).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication with **JWT (JSON Web Token)**
+- Wallet and account management
+- Fast & secure money transfers
+- Transaction history tracking
+- Multi-language support (Arabic / English)
+- Modern UI built with **TailwindCSS**
 
-## Expanding the ESLint configuration
+## Tech :
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: React + Vite, TailwindCSS
+- Backend: Django + Django REST Framework
+- Authentication: JWT (JSON Web Token)
 
-
-
-
-
+## Project Structure:
 
 SYSTEM/
-├── public/                     # الملفات العامة والأصول الثابتة
-├── src/                        # الكود المصدري الرئيسي
-│   ├── components/            # المكونات القابلة لإعادة الاستخدام
-│   ├── pages/                 # صفحات التطبيق
-│   ├── layouts/               # تخطيطات الصفحات الأساسية
-│   ├── hooks/                 # React Hooks مخصصة
-│   ├── routes/                # إعدادات وتعريفات التوجيه
-│   ├── services/              # خدمات API والاتصال بالخادم
-│   ├── store/                 # إدارة الحالة العامة للتطبيق
-│   ├── utils/                 # وظائف ومساعدات مشتركة
-│   ├── locales/               # ملفات الترجمة للغات مختلفة
-│   ├── App.jsx               # المكون الرئيسي للتطبيق
-│   ├── App.css               # الأنماط الرئيسية
-│   ├── main.jsx              # نقطة دخول التطبيق
-│   └── index.css             # الأنماط العامة
-├── node_modules/              # مكتبات Node.js
-├── .vscode/                   # إعدادات Visual Studio Code
-├── package.json              # معلومات المشروع والتبعيات
-├── package-lock.json         # قفل إصدارات التبعيات
-├── vite.config.js            # إعدادات Vite
-├── tailwind.config.js        # إعدادات Tailwind CSS
-├── postcss.config.js         # إعدادات PostCSS
-├── eslint.config.js          # قواعد ESLint
-├── index.html                # ملف HTML الرئيسي
-└── README.md                 # توثيق المشروع
+├── public/ # Public assets and static files
+├── src/ # Main source code
+│ ├── components/ # Reusable components
+│ ├── pages/ # Application pages
+│ ├── layouts/ # Base page layouts
+│ ├── hooks/ # Custom React Hooks
+│ ├── routes/ # Routing configuration
+│ ├── services/ # API services & server communication
+│ ├── store/ # Global state management
+│ ├── utils/ # Utility functions & helpers
+│ ├── locales/ # Translation & localization files
+│ ├── App.jsx # Root application component
+│ ├── App.css # Main app styles
+│ ├── main.jsx # Application entry point
+│ └── index.css # Global styles
+├── node_modules/ # Node.js dependencies
+├── .vscode/ # Visual Studio Code settings
+├── package.json # Project metadata & dependencies
+├── package-lock.json # Locked versions of dependencies
+├── vite.config.js # Vite configuration
+├── tailwind.config.js # Tailwind CSS configuration
+├── postcss.config.js # PostCSS configuration
+├── eslint.config.js # ESLint configuration
+├── index.html # Main HTML file
+└── README.md # Project documentation
+
+## Installation & Run
+
+```bash
+# Clone the repository
+git clone https://github.com/Danya-Shwaf/electronic-payment-system.git
+
+# Navigate to project folder
+cd electronic-payment-system
+
+# Install dependencies
+npm install
+
+# Run the app
+npm run dev
+
+
+
+##  Development Notes
+
+This project was bootstrapped with [Vite](https://vitejs.dev/).
+For React fast refresh, you can use one of the following official plugins:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react) (Babel)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) (SWC)
+
+```
